@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>교과목 평가표</title>
+  <style>
+
+    tbody {
+      border: 1px solid black;
+    }
+
+    .first {
+      font-size: x-large;
+      text-align: center;
+      color: red;
+      background-color: #cfe2f3;
+      border-top: none;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .dotted th, .dotted td {
+      border-top: 1px dashed black;
+      border-bottom: 1px dashed black;
+    }
+
+    .second {
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+    }
+
+    .side {
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+    }
+
+    th {
+      border: 1px solid black;
+      text-align: center;
+    }
+
+    td {
+      text-align: left;
+      border: 1px solid black;
+    }
+
+    .check {
+      text-align: center;
+      font-size: large;
+      font-weight: bold;
+      border: 1px solid black;
+      background-color: #EFEFEF;
+      margin-top: 5px;
+    }
+
+    .time {
+      border: 1px solid black;
+      margin-top: 10px;
+      border-collapse: collapse;
+    }
+
+    .time th, .time td {
+      border: 1px solid black;
+      text-align: center;
+      margin: 2px;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+    }
+
+    .link {
+      text-align: center;
+      border-top: 1px solid black;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      background-color: #cfe2f3;
+      font-size: large;
+      padding: 2px;
+    }
+
+    .linkin {
+      text-align: center;
+      border-top: 1px dashed black;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+      font-size: large;
+      text-decoration: none;
+      padding: 2px;
+    }
+
+    .lastcheck {
+      text-align: center;
+      border: 1px solid black;
+      margin-top: 3px;
+      background-color: #cfe2f3;
+      font-size: large;
+      padding: 2px;
+    }
+
+    .dashed {
+      border-right: 1px dashed black;
+    }
+    .left-align {
+      border: 1px solid black;
+      margin-bottom: 3px;
+    }
+    .left-fr{
+    
+      border: 1px solid black;
+    }
+    .total1 {
+      text-align: center;
+      border: 1px solid black;
+      background-color: #cfe2f3;
+      font-size: large;
+      margin-bottom: 3px;
+    }
+    .total {
+      text-align: center;
+      border: 1px solid black;
+      font-size: large;
+    }
+    .pid {
+      border: 1px solid black;
+      margin: auto;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+
+  <table>
+    <div class="container">
+      <tbody>
+        <tr>
+          <th class="first" colspan="4" style="border-top: none;">교과목 평가표(예시)</th>
+        </tr>
+        <tr class="dotted">
+          <th class="second">과정명</th>
+          <td colspan="3">빅 데이터 기반(파이썬·자바·웹)</td>
+        </tr>
+        <tr class="dotted">
+          <th class="second">훈련기간</th>
+          <td>2025. 01. 15 ~ 2025. 07. 10</td>
+          <th class="side">강사</th>
+          <td>권상구</td>
+        </tr>
+        <tr class="dotted">
+          <th class="second">교과목</th>
+          <td>HTML5&JavaScript</td>
+          <th class="side">훈련생</th>
+          <td>이선진</td>
+        </tr>
+      </tbody>
+    </div>
+  </table>
+
+  <div class="check">평가문항</div>
+  
+  <table class="time">
+    <tr>
+      <th colspan="5">IT 시간표</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>401호</th>
+      <th>402호</th>
+      <th>403호</th>
+      <th>404호</th>
+    </tr>
+    <tr>
+      <th>09:00-12:00</th>
+      <th rowspan="4">공사중</th>
+      <td>PYTHON 기초</td>
+      <td rowspan="2">네트워크보안 실무자 양성</td>
+      <td>보충훈련 과정 (OS/네트워크)</td>
+    </tr>
+    <tr>
+      <th>12:30-15:30</th>
+      <td>JAVA</td>
+      <td>보충훈련 과정(언어계열)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>15:30-18:30</th>
+      <td>C언어</td>
+      <td rowspan="2">가상화 시스템 엔지니어 실무자 양성</td>
+      <td>리눅스</td>
+    </tr>
+    <tr>
+      <th>19:00-22:00</th>
+      <td>PYTHON_WEB</td>
+      <td>서버</td>
+      <td></td>
+    </tr>
+  </table>
+  
+  <p>
+    위 그림을 참고해서 HTML을 사용하여 구현한다.
+  </p>
+  
+  <div class="link"><b>답안 링크</b></div>
+  <div class="linkin"><a href="https://github.com/olseonjin?tab=repositories"><b>링크 삽입 (커밋 파일)</b></a></div>
+  <div class="lastcheck"><b>평가 결과</b></div>
+  
+  <table>
+    <tr>
+      <th rowspan="2">No.</th>
+      <th rowspan="2">평가 항목(배점)</th>
+      <th colspan="5">평가 점수(배점)</th>
+    </tr>
+    <tr>
+      <th>최상(25)</th>
+      <th>중상(20)</th>
+      <th>중(15)</th>
+      <th>중하(10)</th>
+      <th>최하(5)</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td class="left-align">가독성</td>
+      <td class="dashed"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td class="left-align">작성력</td>
+      <td class="dashed"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td class="left-align">기술 창조도</td>
+      <td class="dashed" ></td>
+      <td class="dashed" ></td>
+      <td class="dashed" ></td>
+      <td class="dashed" ></td>
+      <td class="dashed" ></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td class="left-align">완전성</td>
+      <td class="dashed" ></td>
+      <td class="dashed" ></td>
+      <td class="dashed" ></td>
+      <td class="dashed" ></td>
+      <td class="dashed" ></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td class="left-align">문헌 작성의 정정률성</td>
+      <td class="dashed" ></td>
+      <td class="dashed" ></td>
+      <td class="dashed"  ></td>
+      <td class="dashed" ></td>
+      <td class="solid" ></td>
+    </tr>
+  </table>
+  
+  <div class="pid">
+    <p>*피드백</p>
+    <p></p>
+  </div>
+
+  <div class="total1">총점</div>
+  <div class="total">0</div>
+
+</div>
+</body>
+
+</html>
